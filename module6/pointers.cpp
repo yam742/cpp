@@ -27,7 +27,7 @@ int main()
 
 	*pF = 1.66f;
        	*pD = 9.8;
-    	*pI = 365;
+    	*pI = 366;
 	*pC = 'X';
 
 	printf("f = %f, *pF = %f\n", f, *pF);
