@@ -5,7 +5,9 @@ void output_matrix(float* numbers, int rows, int cols)
 	for(int row = 0; row < rows; row++)
 	{
 		for(int col = 0; col < cols; col++)
-			printf("%5.2f", numbers[row, col]);
+			printf("%5.2f", numbers[row * cols + col]);
+		printf("\n");
+					
 					
 
 	}
@@ -20,8 +22,8 @@ int main()
 	{
 		{1, 2, 3},
 		{4, 5, 6}
-	}	
+				};	
 	
-	output_matrix(numbers, rows, cols);
+	output_matrix(&numbers[0][0], rows, cols);
 }	
 
